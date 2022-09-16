@@ -27,8 +27,8 @@ function error_exit {
 # Authenticate to the Amplify Platform using SA   #
 ###################################################
 
-axway config set env preprod
-axway central config set --base-url=https://apicentral.qa.ampc.axwaytest.net
+# axway config set env preprod
+# axway central config set --base-url=https://apicentral.qa.ampc.axwaytest.net
 axway auth login --client-id $CLIENT_ID --client-secret $CLIENT_SECRET
 axway auth switch --org "$ORGANIZATION"
 
