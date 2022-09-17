@@ -241,7 +241,7 @@ do
 done
 
 axway central create -f json_files/quota.json -y -o json > json_files/quota-created.json
-
+cat json_files/quota-created.json
 error_exit "Problem with creating Quota" "json_files/quota-created.json"
 
 
